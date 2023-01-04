@@ -1,18 +1,18 @@
 server:
- port: 8080
+  port: 8080
 spring:
- datasource:
-  username: root
-  password: 2537662
-  url: jdbc:mysql://localhost:3306/search_engine?useSSL=false&requireSSL
-   =false&allowPublicKeyRetrieval=true
- jpa:
-  properties:
-   hibernate:
-    dialect: org.hibernate.dialect.MySQL8Dialect
-  hibernate:
-   ddl-auto: update
-  show-sql: true
+  datasource:
+    username: root
+    password: 2537662
+    url: jdbc:mysql://localhost:3306/search_engine?useSSL=false&requireSSL
+      =false&allowPublicKeyRetrieval=true
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
 
 indexing-settings:
   sites:
